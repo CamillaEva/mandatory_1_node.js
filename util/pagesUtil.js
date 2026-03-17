@@ -1,6 +1,6 @@
 import { readPage, constructPage } from "./templatingEngine.js";
 
-const frontpage = readPage('./public/pages/frontpage/index.html');
+const frontpage = readPage('public/pages/frontpage/index.html');
 
 const lektion1 = readPage('./public/pages/lektioner/lektion1.html');
 
