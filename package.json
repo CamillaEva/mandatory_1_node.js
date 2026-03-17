@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start-dev": "cross-env PORT=8080 NODE_ENV=DEV node app.js",
+    "start-prod": "cross-env PORT=80 node app.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1",
+    "markdown-it": "^14.1.1",
+    "marked": "^17.0.4"
+  },
+  "name": "mandatory_i",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

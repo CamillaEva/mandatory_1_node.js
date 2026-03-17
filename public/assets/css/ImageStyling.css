@@ -1,0 +1,49 @@
+
+.smiley_logo {
+    height: 30px;
+    width: 30px;
+}
+
+.node_image,
+.smiley-o {
+    height: 100px;
+}
+
+.node_tagline {
+    height: 200px;
+    margin-left: 90px;
+    border-radius: 20px;
+}
+
+.blueSmiley {
+    height: 200px;
+    padding: 100px;
+}
+
+.API, 
+.url-picture {
+    width: 60%;
+}
+
+.clientServer {
+    width: 50%;
+}
+
+.packagejson {
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.nodemonjson {
+    border-radius: 10px;
+}
+
+.date, 
+.redirection, 
+.footerImage,
+.router, 
+.script {
+    border-radius: 10px;
+    width: 100%;
+}

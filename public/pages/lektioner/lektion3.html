@@ -1,0 +1,167 @@
+<h1>Lekti<img class="smiley-o" src="../../assets/images/smiley2.png">n 3</h1>
+
+
+<div class="blue-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> Nodemon </h2>
+            Nodemon er et værktøj der hjælper ved udvikling i Node.js,
+            da det automatiks genstarter vores applikation når der er ændringer i filerne.
+            <div>
+                <h3>
+                    for at kører programmet gennem node skriver man denne kommando:
+                </h3>
+                <code>
+                    nodemon 'your node app name'
+                </code>
+            </div>
+            her genstarter den din applikation hver gang du ændrer i js og json filer,
+            hvis man vil have den til at genstarte hver gang man ændrer i CSS og HTML,
+            skal man lave en fil i rod mappen af ens projekt, og kalde den nodemon.json,
+            der skal du skrive dette ind:
+            <div>
+                <img class="nodemonjson" src="../../assets/images/nodemonjson.png">
+            </div>
+    </h3>
+</div>
+</div>
+
+<div class="seethrough-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> loop metoder </h2>
+            <h3>Eksempler po loops der findes: .map, .forEach, .filter, .reduce, .sort, .find, .indexOf</h3>
+            Loop regler:
+            <li>rule 1: use loop methods whenever possible</li>
+            <li>rule 2: only use for loops in JavaScript for finger counting</li>
+            <li>rule 3: use map over forEach, if you need the data afterwards</li>
+
+            <h3>her er 8 argumenter for, hvorfor loop metoderne (forEach, map, filter, sort, find, reduce) er bedre end
+                for loops</h3>
+
+            <li>argument 1: Brevity</li>
+            <li>argument 2: Clarity (loop methods communicate intent)</li>
+            <li>argument 3: No accidental indexing errors (out of bounds)</li>
+            <div>
+                <code class="git-command">
+                    <h3>for (let i = 0; i < numbers.length; i++) {</h3>
+                        <h3>console.log(numbers[i]);</h3>
+                        <h3>}</h3>
+                        </code>
+            </div>
+            <div>
+                <code class="git-command">
+                        <h3>numbers.forEach((number) => console.log(number));</h3>
+                    </code>
+            </div>
+
+            <li>argument 4: Avoids for of/in numbers confusion</li>
+            <li>argument 5: Able to access both element and index at the same time</li>
+
+            <div>
+                <code class="git-command">let list = [4, 5, 6];</code>
+            </div>
+            <div>
+                <code class="git-command">
+                    <h3>for (let i in list) {</h3>
+                    <h3>console.log(i); // "0", "1", "2" <- strings</h3>
+                    <h3>}</h3>
+                </code>
+            </div>
+            <div>
+                <code class="git-command">
+                    <h3>for (let i of list) {</h3>
+                    <h3>console.log(i); // 4, 5, 6 <- numbers</h3>
+                    <h3>}</h3>
+                </code>
+            </div>
+
+            <li>argument 6: Avoids side effects!!!</li>
+            <li>argument 7: Shorter and more readable / maintainable</li>
+
+            <div>
+                <code class="git-command2">
+
+                    let index = 0;
+                    for (number of numbers) {
+                        if (index % 2 === 1) {
+                            oddIndexSideEffect.push(Number(number));
+                        }
+                        index++;
+                    }
+                    
+                    console.log(oddIndexSideEffect);
+                    
+                    const oddNumbers = numbers.filter((element, index) => index % 2 === 1);
+                    
+                    console.log(oddNumbers);
+                </code>
+            </div>
+
+            <li>argument 8: Doesn't mutate the original list</li>
+
+            <div>
+                <code class="git-command2">
+                   <h3>for (index in numbers) {</h3>
+                    <h3>numbers[index] = numbers[index] * 2;</h3>    
+                    <h3>}</h3>
+                </code>
+                <h3>// Use .map to avoid side effect / mutating the original list</h3>
+                <code class="git-command2">
+                <h3>const doubledList = numbers.map((number) => number * 2);</h3>
+                <h3>console.log(numbers);</h3>
+                <h3>console.log(doubledList);</h3> 
+                </code>
+            </div>
+
+    </h3>
+</div>
+</div>
+
+<div class="orange-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> URL anatomi </h2>
+            <img class="url-picture" src="../../assets/images/URL_Anatomy.png">
+    </h3>
+</div>
+</div>
+
+<div class="seethrough-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> POST requests </h2>
+
+            Vi bruger POST når vi gerne vil sende data til serveren, fra clienten.
+            her er en eksempel:
+
+            <div>
+                <code class="git-command">
+                    <h3>app.post('/dinosaurs', (req, res) => {</h3>
+                    <h3>console.log(req.body);</h3>
+                    <h3>res.send(req.body);</h3>
+                    <h3>});</h3>
+                </code>
+            </div>
+    </h3>
+</div>
+</div>
+
+<div class="blue-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> XXS </h2>
+            Eller Cross site scripting, som det hedder,
+            er et sikkerheds-problem hvor en hacker kan putte malicious code ind i en webside, som andre besøger.
+    </h3>
+</div>
+</div>
+
+
+<button class="button" onclick="window.location.href='/'"> tilbage til start siden </button>
+

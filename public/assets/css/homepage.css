@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Palmas;
+    src: url('Palmas.otf');
+    font-weight: bold;
+}
+
+a {
+    font-family: Palmas;
+    color: bisque;
+}
+
+h1 {
+    font-family: Palmas;
+    font-weight: 900;
+    text-align: center;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 10rem;
+    letter-spacing: -5px;
+    margin-bottom: 0%;
+}
+
+h2 {
+    color: #EB5027;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(61, 93, 161);
+    padding: 10px;
+    border: 2px solid rgb(20, 20, 224);
+    border-radius: 10px;
+    color: bisque;
+}
+

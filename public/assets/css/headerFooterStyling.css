@@ -1,0 +1,36 @@
+/* ================== HEADER ==================== */
+
+.header {
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 20px;
+    background-color: rgb(61, 93, 161);
+    padding: 20px;
+    border: 2px solid rgb(20, 20, 224);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ================== FOOTER ==================== */
+
+#copyright-year {
+    color: #1E89FD;
+    font-weight: bold;
+}
+
+.footer {
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 20px;
+    background-color: #EB5027;
+    padding: 20px;
+    border: 2px solid orange;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}

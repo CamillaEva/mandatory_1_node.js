@@ -1,0 +1,56 @@
+<h1>Lekti<img class="smiley-o" src="../../assets/images/smiley2.png">n 5</h1>
+
+
+<div class="blue-box">
+
+  <h3 class="box-text">
+    <div>
+      <h2 class="box-text"> static files </h2>
+      Static files er filer såsom scripts, CSS filer, Billeder osv. 
+      Altså filer der ikke er Servergenererede, men som skal sendes til browseren når der bliver requestet.
+
+  </h3>
+</div>
+</div>
+
+<div class="orange-box">
+
+  <h3 class="box-text">
+    <div>
+      <h2 class="box-text"> import og export </h2>
+      man kan både importerer biblioteker der allerede er, eller man har hentet ned til sit node
+      projekt. f. eks: express. 
+      det ser sådan her ud: 
+      <div>
+        <code class="git-command">
+          import express from 'express';
+        </code>
+      </div>
+
+      eller man kan exportere sine egne filer som vist her: 
+        her har vi lavet en fil der hedder pagesRouter og i bunden exporterer vi den spdan her:
+        <img class="router" src="../../assets/images/router.png">
+
+        <div>
+        og så kan vi importerer den et andet sted i vores applikation, i dette eksempel importerer vi den til vores app.js: 
+      <code class="git-command">
+        import pagesRouter from './routers/pagesRouter.js';
+      </code>
+      </div>
+  </h3>
+</div>
+</div>
+
+<div class="seethrough-box">
+
+  <h3 class="box-text">
+    <div>
+      <h2 class="box-text"> redirection </h2>
+      <img class="redirection" src="../../assets/images/redirection.png">
+  </h3>
+</div>
+</div>
+
+
+<button class="button" onclick="window.location.href='/'"> tilbage til start siden </button>
+

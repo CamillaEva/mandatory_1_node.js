@@ -1,0 +1,174 @@
+<h1>Lekti<img class="smiley-o" src="../../assets/images/smiley2.png">n 2</h1>
+
+
+<div class="blue-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> Scoping </h2>
+
+            <code class="git-command">
+            <h4>function something() { // function scope </h4>
+            <h4>console.log("what is this?")</h4>
+            <h4>}</h4>
+            </code>
+
+            <code class="git-command">
+            <h4>{ //block scope </h4>
+            <h4>("what is this?")</h4>
+            <h4>}</h4>
+            </code>
+    </h3>
+</div>
+</div>
+
+</div>
+
+<div class="seethrough-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> callback functions </h2>
+
+            En Callback funktion er en funktion som bliver sendt som et argument i en anden funktion, og som så bliver
+            eksekveret senere.
+
+            <div>
+                <code class="git-command">
+            <h4>app.get('/', (req, res) => { </h4>
+            <h4>({data: "Welcome to the first server!"}); </h4>
+            <h4>}); </h4>
+            </code>
+            </div>
+
+            request - response, de to parametre som callbackfunktionen tager imod
+            vi er på serveren - vi sender response
+
+    </h3>
+</div>
+</div>
+
+<div class="orange-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> npm </h2>
+            NPM (Node Package Manager) er en pakke manager for Node.js.
+    </h3>
+</div>
+</div>
+
+<div class="blue-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> Package.json </h2>
+            package.json er en fil der beskriver ens Node.js projekt. det indeholder information om ens applikation, så
+            som navn, version, dependencies og scripts.
+            <div>
+                <h4>For at lave en Package.json fil skal man skrive denne kommando:</h4>
+                <code class="git-command">npm init</code>
+                <h4>i terminalen i projekt mappen</h4>
+            </div>
+            <div>
+                <h4>når man installere en pakke med npm, bliver den tilføjet til og opdaterer package.json automatisk,
+                    det kunne f.eks se sådan her ud:</h4>
+                <code class="git-command">npm install express</code>
+                <h4>hvis du skriver det i terminalen bliver express tilføjet til dit projekt og du vil kunne se dette i
+                    din package.json fil: </h4>
+            </div>
+            <img class="packagejson" src="../../assets/images/packagejson.png">
+    </h3>
+</div>
+</div>
+
+<div class="orange-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> node_modules </h2>
+
+            node_modules er en mappe i vores Node projekt, som opbevarer vores externe dependencies.
+            Man må ikke pushe node_modules op til git, fordi det kan give mergekonflikter og rod!.
+            Derfor skal man huske at skrive den i sin gitignore fil.
+    </h3>
+</div>
+</div>
+
+<div class="seethrough-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> express server </h2>
+            der er tre vigtige skridt i at lave en Express server.
+            <div>
+                <h3 class="box-text">Importér </h3>
+                <code class="git-command">const express = require('express');</code>
+            </div>
+
+            <div>
+                <h3 class="box-text">Instantier </h3>
+                <code class="git-command">const app = express();</code>
+            </div>
+
+            <div>
+                <h3 class="box-text">Lyt </h3>
+                <code class="git-command">app.listen(8080);</code>
+            </div>
+    </h3>
+</div>
+</div>
+
+<div class="blue-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> Client & Server </h2>
+
+            <h3 class="box-text">Client:</h3>
+            Det brugeren ser.
+            Client siden er den som sender requests.
+            browser og frontend (js, html, css)
+            <h3 class="box-text">Server: </h3>
+            Server siden er den der modtager og behandler requests.
+            Backend - Logik og data.
+
+
+    </h3>
+    <img class="clientServer" src="../../assets/images/Client-Server.png">
+</div>
+</div>
+
+<div class="orange-box">
+
+    <h3 class="box-text">
+        <div>
+            <h2 class="box-text"> Get requests </h2>
+
+            En GET request er når clienten laver en request til serveren, så sender vi et svar tilbage.
+
+            <div>
+                <h3>Det kan se sådan her ud:</h3>
+                <code class="git-command">
+                    <h3>app.get('/snowstorms', (req, res) => { </h3>
+                    <h3>res.send({data: "Warning: snowstorm ahead!"});</h3> 
+                    <h3>});</h3>
+                </code>
+            </div>
+
+            <div>
+                <h3>her sender vi en html fil som svar:</h3>
+                <code class="git-command">
+                        <h3>router.get('/', (req, res) => { </h3>
+                    <h3>res.send(frontpagePage);</h3> 
+                    <h3>});</h3>
+                </code>
+            </div>
+    </h3>
+</div>
+</div>
+
+
+
+
+<button class="button" onclick="window.location.href='/'"> tilbage til start siden </button>

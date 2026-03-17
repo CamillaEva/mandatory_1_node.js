@@ -1,0 +1,89 @@
+
+.seethrough-box {
+    width: 60%;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.blue-box {
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 20px;
+    background-color: rgb(61, 93, 161);
+    padding: 20px;
+    border: 2px solid rgb(20, 20, 224);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orange-box {
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 20px;
+    background-color: orange;
+    padding: 20px;
+    border: 2px solid #EB5027;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-text {
+    color: rgb(53, 49, 49);
+    text-align: left;
+    font-weight: bold;
+    max-width: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.orange-picture-box {
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: orange;
+    border: 2px solid #EB5027;
+    gap: 20px;
+}
+
+.command-box {
+    width: 40%;
+    margin: 0px auto;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 10px;
+    border: 2px solid rgb(53, 49, 49);
+}
+
+.git-command {
+    display: inline-block;
+    background-color: #e8cfae;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: monospace;
+    border: 2px solid #333;
+    text-align: left;
+    width: 60%;
+    font-size: 14px;
+}
+
+.git-command2 {
+    white-space: pre-line;
+    display: inline-block;
+    background-color: #e8cfae;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: monospace;
+    border: 2px solid #333;
+    text-align: left;
+    width: 60%;
+    font-size: 14px;
+}
+
+.git-command+h4 {
+    margin-top: 5px;
+}
