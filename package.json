@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start-dev": "cross-env PORT=8080 NODE_ENV=PROD node app.js",
+    "start-dev": "cross-env PORT=8080 NODE_ENV=DEV node app.js",
     "start-prod": "cross-env PORT=80 node app.js"
   },
   "type": "module",
